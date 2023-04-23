@@ -1,0 +1,22 @@
+{
+  "name": "xywz-blocks",
+  "description": "Structure to work with multiple blocks in a single plugin.",
+  "version": "1.0.0-beta",
+  "author": "sarahcssiqueira",
+  "license": "MIT",
+  "main": "",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "start:block-x": "wp-scripts start ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build",
+    "build:block-x": "wp-scripts build ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahcssiqueira/xyw...z-blocks.git"
+  },
+  "devDependencies": {
+    "@wordpress/i18n": "^4.38.0",
+    "@wordpress/scripts": "26.1.0"
+  }
+}
