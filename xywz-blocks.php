@@ -15,11 +15,10 @@
  * Update URI:        https://sarahjobs.com/wordpress/plugins/xywz-blocks/update
  *
  * @package xywzblocks
+ *
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 new Block_X();
 
