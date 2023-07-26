@@ -1,10 +1,23 @@
 # XYW...Z Blocks
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![Release Version](https://img.shields.io/github/release/sarahcssiqueira/xywz-blocks.svg)](https://github.com/sarahcssiqueira/xywz-blocks/releases/latest)
 
 Structure to work with multiple Gutenberg blocks in a single plugin. Contains four main blocks.
+
+## Table of Contents
+
+- [Introduction](#XYW...Z-blocks)
+- [Requirements](#requirements)
+- [Blocks](#blocks)
+  - [Block X](#block-x)
+  - [Block Y](#block-y)
+  - [Block W](#block-w)
+  - [Block Z](#block-z)
+- [Custom Block Category](#custom-block-category)
+- [Usage](#usage)
+- [License](#license)
 
 ## Requirements
 
@@ -31,7 +44,7 @@ Structure to work with multiple Gutenberg blocks in a single plugin. Contains fo
 
 [To do]
 
-### Custom block category
+## Custom block category
 
 By default, the WordPress core provides some categories which you can assign to your Gutenberg blocks. However, to keep things organized, can be a good idea to create custom block categories for categorizing your plugin, categorize your blocks based on some features, etc.
 
@@ -57,7 +70,7 @@ Example: **register_new_category** function:
 
 ## Usage
 
-Clone (or download) this repository git clone https://github.com/sarahcssiqueira/xywz-blocks or download the [latest release](https://github.com/sarahcssiqueira/xywz-blocks/releases).
+Clone this repository `git clone https://github.com/sarahcssiqueira/xywz-blocks` or download the [latest release](https://github.com/sarahcssiqueira/xywz-blocks/releases).
 
 Run `npm install` && `npm run build`
 
