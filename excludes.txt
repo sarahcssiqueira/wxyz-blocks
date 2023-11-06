@@ -1,0 +1,12 @@
+/node_modules/
+blocks/*/build
+.git
+.github
+.gitignore
+.phpcs.xml
+excludes.txt
+composer.json
+README.md
+LICENSE
+package.json
+package-lock.json
