@@ -39,3 +39,4 @@ jobs:
         env:
           SSH_HOST: digitalocean
           DEST: "/var/www/plugins.sarahjobs.com/wp-content/plugins/xywz-blocks"
+          EXCLUDES: excludes.txt

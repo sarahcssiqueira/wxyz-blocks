@@ -1,5 +1,4 @@
 /node_modules/
-blocks/*/build
 .git
 .github
 .gitignore
