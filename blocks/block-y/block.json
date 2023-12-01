@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "title": "Block Y",
+  "name": "xywz-blocks/block-y",
+  "description": "Block Y",
+  "version": "1.0.0-beta",
+  "category": "xywz-blocks",
+  "icon": "rest-api",
+  "supports": {
+    "html": true
+  },
+  "attributes": {
+    "exampleAttribute": {
+      "type": "string"
+    }
+  },
+  "keywords": ["basic", "model"],
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./src/style.css"
+}

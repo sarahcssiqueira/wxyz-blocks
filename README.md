@@ -30,19 +30,19 @@ Structure to work with multiple Gutenberg blocks in a single plugin. Contains fo
 
 ### Block X
 
-[To do]
+Receives an attribute and displays it in frontend.
 
 ### Block Y
 
-[To do]
+Retrieve and display data from an API.
 
 ### Block W
 
-[To do]
+Show latest custom posts.
 
 ### Block Z
 
-[To do]
+Slider image.
 
 ## Custom block category
 

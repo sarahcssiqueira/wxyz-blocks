@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name:       XYW...Z Blocks
  * Plugin URI:        https://sarahjobs.com/wordpress/plugins/xywz-blocks
@@ -18,51 +19,95 @@
  *
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 new Block_X();
 
-class Block_X {
+class Block_X
+{
 
-	public function __construct() {
-		add_action( 'init', array( $this, 'block_x_register' ) );
-		add_action( 'enqueue_block_editor_assets', array( $this, 'block_x_enqueues' ) );
-		add_filter( 'block_categories_all', array( $this, 'register_new_category' ), 10, 2 );
-	}
+    public function __construct()
+    {
+        add_action('init', array($this, 'block_x_register'));
+        add_action('enqueue_block_editor_assets', array($this, 'block_x_enqueues'));
+        add_filter('block_categories_all', array($this, 'register_new_category'), 10, 2);
+    }
 
-	/**
-	 * Register Block
-	 */
-	public function block_x_register() {
-		register_block_type( __DIR__ );
-	}
+    /**
+     * Register Block
+     */
+    public function block_x_register()
+    {
+        register_block_type(__DIR__);
+    }
 
-	/**
-	 * Enqueues
-	 */
-	public function block_x_enqueues() {
-		wp_enqueue_script(
-			'block-x',
-			plugin_dir_url( __FILE__ ) . './blocks/block-x/build/index.js',
-			array( 'wp-blocks', 'wp-i18n', 'wp-editor' )
-		);
+    /**
+     * Enqueues
+     */
+    public function block_x_enqueues()
+    {
+        wp_enqueue_script(
+            'block-x',
+            plugin_dir_url(__FILE__) . './blocks/block-x/build/index.js',
+            array('wp-blocks', 'wp-i18n', 'wp-editor')
+        );
 
-		wp_enqueue_style(
-			'block-x',
-			plugin_dir_url( __FILE__ ) . '.style/style.css',
-			array(),
-		);
-	}
+        wp_enqueue_style(
+            'block-x',
+            plugin_dir_url(__FILE__) . '.style/style.css',
+            array(),
+        );
+    }
 
-	/**
-	 * Register custom category
-	 */
-	public function register_new_category( $categories ) {
-		$categories[] = array(
-			'slug'  => 'xywz-blocks',
-			'title' => 'XYW...Z Blocks',
-		);
+    /**
+     * Register custom category
+     */
+    public function register_new_category($categories)
+    {
+        $categories[] = array(
+            'slug'  => 'xywz-blocks',
+            'title' => 'XYW...Z Blocks',
+        );
 
-		return $categories;
-	}
+        return $categories;
+    }
+}
+
+
+new Block_Y();
+
+class Block_Y
+{
+
+    public function __construct()
+    {
+        add_action('init', array($this, 'block_y_register'));
+        add_action('enqueue_block_editor_assets', array($this, 'block_y_enqueues'));
+    }
+
+    /**
+     * Register Block
+     */
+    public function block_y_register()
+    {
+        register_block_type(__DIR__);
+    }
+
+    /**
+     * Enqueues
+     */
+    public function block_y_enqueues()
+    {
+        wp_enqueue_script(
+            'block-y',
+            plugin_dir_url(__FILE__) . './blocks/block-y/build/index.js',
+            array('wp-blocks', 'wp-i18n', 'wp-editor')
+        );
+
+        wp_enqueue_style(
+            'block-y',
+            plugin_dir_url(__FILE__) . '.style/style.css',
+            array(),
+        );
+    }
 }

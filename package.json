@@ -9,7 +9,9 @@
     "start": "wp-scripts start",
     "build": "wp-scripts build",
     "start:block-x": "wp-scripts start ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build",
-    "build:block-x": "wp-scripts build ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build"
+    "build:block-x": "wp-scripts build ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build",
+    "start:block-y": "wp-scripts start ./blocks/block-y/src/index.js --output-path=./blocks/block-y/build",
+    "build:block-y": "wp-scripts build ./blocks/block-y/src/index.js --output-path=./blocks/block-y/build"
   },
   "repository": {
     "type": "git",
