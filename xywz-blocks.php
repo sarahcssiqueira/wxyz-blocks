@@ -32,3 +32,10 @@ new Block_X();
 require dirname( __FILE__ ) . '/inc/class-block-y.php';
 use XYWZBlocks\Inc\Block_Y;
 new Block_Y();
+
+/**
+ * Block W
+ */
+require dirname( __FILE__ ) . '/inc/class-block-w.php';
+use XYWZBlocks\Inc\Block_W;
+new Block_W();
