@@ -35,13 +35,13 @@ class Block_X {
 	public function block_x_enqueues() {
 		wp_enqueue_script(
 			'block-x',
-			plugin_dir_url( __FILE__ ) . './blocks/block-x/build/index.js',
+			plugin_dir_url( __FILE__ ) . '../blocks/block-x/build/index.js',
 			[ 'wp-blocks', 'wp-i18n', 'wp-editor' ]
 		);
 
 		wp_enqueue_style(
 			'block-x',
-			plugin_dir_url( __FILE__ ) . '.style/style.css',
+			plugin_dir_url( __FILE__ ) . '..style/style.css',
 			[],
 		);
 	}
