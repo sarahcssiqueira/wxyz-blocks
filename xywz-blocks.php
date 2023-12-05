@@ -22,20 +22,20 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Block X
  */
-require dirname( __FILE__ ) . '/inc/class-block-x.php';
-use XYWZBlocks\Inc\Block_X;
-new Block_X();
+require_once __DIR__ . '/inc/class-block-x.php';
+use XYWZBlocks\Inc\BlockX;
+new BlockX();
 
 /**
  * Block Y
  */
-require dirname( __FILE__ ) . '/inc/class-block-y.php';
-use XYWZBlocks\Inc\Block_Y;
-new Block_Y();
+require_once __DIR__ . '/inc/class-block-y.php';
+use XYWZBlocks\Inc\BlockY;
+new BlockY();
 
 /**
  * Block W
  */
-require dirname( __FILE__ ) . '/inc/class-block-w.php';
-use XYWZBlocks\Inc\Block_W;
-new Block_W();
+require_once __DIR__ . '/inc/class-block-w.php';
+use XYWZBlocks\Inc\BlockW;
+new BlockW();

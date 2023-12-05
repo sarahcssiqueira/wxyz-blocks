@@ -10,7 +10,7 @@ namespace XYWZBlocks\Inc;
 /**
  * Block Y
  */
-class Block_Y {
+class BlockY {
 
 
 	/**
