@@ -2,10 +2,10 @@
 /**
  * Block X
  *
- * @package xywzblocks
+ * @package wxyzblocks
  */
 
-namespace XYWZBlocks\Inc;
+namespace WXYZBlocks\Inc;
 
 /**
  * Block X

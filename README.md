@@ -1,4 +1,4 @@
-# XYW...Z Blocks
+# WXYZ Blocks
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
@@ -11,9 +11,9 @@ Structure to work with multiple Gutenberg blocks in a single plugin. Contains fo
 - [Introduction](#XYW...Z-blocks)
 - [Requirements](#requirements)
 - [Blocks](#blocks)
+  - [Block W](#block-w)
   - [Block X](#block-x)
   - [Block Y](#block-y)
-  - [Block W](#block-w)
   - [Block Z](#block-z)
 - [Custom Block Category](#custom-block-category)
 - [Usage](#usage)
@@ -28,6 +28,10 @@ Structure to work with multiple Gutenberg blocks in a single plugin. Contains fo
 
 ## Blocks
 
+### Block W
+
+Show latest custom posts.
+
 ### Block X
 
 Receives an attribute and displays it in frontend.
@@ -35,10 +39,6 @@ Receives an attribute and displays it in frontend.
 ### Block Y
 
 Retrieve and display data from an API.
-
-### Block W
-
-Show latest custom posts.
 
 ### Block Z
 

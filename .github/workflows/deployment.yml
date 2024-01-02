@@ -38,5 +38,5 @@ jobs:
           ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
         env:
           SSH_HOST: digitalocean
-          DEST: "/var/www/plugins.sarahjobs.com/wp-content/plugins/xywz-blocks"
+          DEST: "/var/www/plugins.sarahjobs.com/wp-content/plugins/wxyz-blocks"
           EXCLUDES: excludes.txt
