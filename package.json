@@ -1,5 +1,5 @@
 {
-  "name": "xywz-blocks",
+  "name": "wxyz-blocks",
   "description": "Structure to work with multiple blocks in a single plugin.",
   "version": "1.0.0-beta",
   "author": "sarahcssiqueira",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarahcssiqueira/xyw...z-blocks.git"
+    "url": "git+https://github.com/sarahcssiqueira/wxyz-blocks.git"
   },
   "devDependencies": {
     "@wordpress/i18n": "^4.38.0",

@@ -1,5 +1,5 @@
 {
-  "name": "sarahcssiqueira/xywz-blocks",
+  "name": "sarahcssiqueira/wxyz-blocks",
   "description": "Custom Gutenberg blocks.",
   "license": "GPL-2.0+",
   "type": "wordpress-plugin",
@@ -11,12 +11,12 @@
     }
   ],
   "support": {
-    "src": "https://github.com/sarahcssiqueira/xywz-blocks",
-    "issues": "https://github.com/sarahcssiqueira/xywz-blocks/issues"
+    "src": "https://github.com/sarahcssiqueira/wxyz-blocks",
+    "issues": "https://github.com/sarahcssiqueira/wxyz-blocks/issues"
   },
   "autoload": {
     "psr-4": {
-      "XYWZBlocks\\Inc\\": "./inc"
+      "WXYZBlocks\\Inc\\": "./inc"
     }
   },
   "scripts": {

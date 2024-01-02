@@ -2,10 +2,10 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 2,
   "title": "Block X",
-  "name": "xywz-blocks/block-x",
+  "name": "wxyz-blocks/block-x",
   "description": "Block X",
   "version": "1.0.0-beta",
-  "category": "xywz-blocks",
+  "category": "wxyz-blocks",
   "icon": "admin-generic",
   "supports": {
     "html": true
