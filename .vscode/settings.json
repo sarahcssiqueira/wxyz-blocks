@@ -1,0 +1,4 @@
+{
+    "phpCodeSniffer.standard":	"Automatic",
+    "phpCodeSniffer.exec.osx":"./vendor/bin/phpcs"
+}
