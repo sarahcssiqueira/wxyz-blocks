@@ -39,3 +39,10 @@ new BlockY();
 require_once __DIR__ . '/inc/class-block-w.php';
 use WXYZBlocks\Inc\BlockW;
 new BlockW();
+
+/**
+ * Block Z
+ */
+require_once __DIR__ . '/inc/class-block-z.php';
+use WXYZBlocks\Inc\BlockZ;
+new BlockZ();
