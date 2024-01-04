@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "title": "Block Z",
+  "name": "wxyz-blocks/block-z",
+  "description": "Block Z",
+  "version": "1.0.0-beta",
+  "category": "wxyz-blocks",
+  "icon": "slides",
+  "supports": {
+    "html": true
+  },
+  "attributes": {
+    "exampleAttribute": {
+      "type": "string"
+    }
+  },
+  "keywords": ["basic", "model"],
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./src/style.css"
+}

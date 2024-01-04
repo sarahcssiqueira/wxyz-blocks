@@ -8,12 +8,14 @@
   "scripts": {
     "start": "wp-scripts start",
     "build": "wp-scripts build",
+    "start:block-w": "wp-scripts start ./blocks/block-w/src/index.js --output-path=./blocks/block-w/build",
+    "build:block-w": "wp-scripts build ./blocks/block-w/src/index.js --output-path=./blocks/block-w/build",
     "start:block-x": "wp-scripts start ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build",
     "build:block-x": "wp-scripts build ./blocks/block-x/src/index.js --output-path=./blocks/block-x/build",
     "start:block-y": "wp-scripts start ./blocks/block-y/src/index.js --output-path=./blocks/block-y/build",
     "build:block-y": "wp-scripts build ./blocks/block-y/src/index.js --output-path=./blocks/block-y/build",
-    "start:block-w": "wp-scripts start ./blocks/block-w/src/index.js --output-path=./blocks/block-w/build",
-    "build:block-w": "wp-scripts build ./blocks/block-w/src/index.js --output-path=./blocks/block-w/build"
+    "start:block-z": "wp-scripts start ./blocks/block-z/src/index.js --output-path=./blocks/block-z/build",
+    "build:block-z": "wp-scripts build ./blocks/block-z/src/index.js --output-path=./blocks/block-z/build"
   },
   "repository": {
     "type": "git",
