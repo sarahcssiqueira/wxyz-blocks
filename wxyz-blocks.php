@@ -20,29 +20,19 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Block X
+ * Include and instantiate Block classes
  */
 require_once __DIR__ . '/inc/class-block-x.php';
-use WXYZBlocks\Inc\BlockX;
-new BlockX();
-
-/**
- * Block Y
- */
 require_once __DIR__ . '/inc/class-block-y.php';
-use WXYZBlocks\Inc\BlockY;
-new BlockY();
-
-/**
- * Block W
- */
 require_once __DIR__ . '/inc/class-block-w.php';
-use WXYZBlocks\Inc\BlockW;
-new BlockW();
-
-/**
- * Block Z
- */
 require_once __DIR__ . '/inc/class-block-z.php';
+
+use WXYZBlocks\Inc\BlockX;
+use WXYZBlocks\Inc\BlockY;
+use WXYZBlocks\Inc\BlockW;
 use WXYZBlocks\Inc\BlockZ;
+
+new BlockX();
+new BlockY();
+new BlockW();
 new BlockZ();
