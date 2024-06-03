@@ -2,9 +2,9 @@
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-[![Release Version](https://img.shields.io/github/release/sarahcssiqueira/xywz-blocks.svg)](https://github.com/sarahcssiqueira/xywz-blocks/releases/latest)
+[![Release Version](https://img.shields.io/github/release/sarahcssiqueira/xywz-blocks.svg)](https://github.com/sarahcssiqueira/wxyz-blocks/releases/latest)
 
-Structure to work with multiple Gutenberg blocks in a single plugin. Contains four main blocks.
+Structure to work with multiple Gutenberg blocks in plugin. Contains four main blocks.
 
 ## Table of Contents
 
@@ -30,11 +30,11 @@ Structure to work with multiple Gutenberg blocks in a single plugin. Contains fo
 
 ### Block W
 
-Show latest custom posts.
+Receives an attribute and displays it in frontend.
 
 ### Block X
 
-Receives an attribute and displays it in frontend.
+Show latest posts.
 
 ### Block Y
 
@@ -53,8 +53,6 @@ To achieve that, you can create your custom block category using the WordPress b
 Example: **register_new_category** function:
 
 ```
-//index.php
-
        function register_new_category ($categories) {
             $categories[] = array(
                 'slug'  => 'custom-category',
@@ -65,14 +63,15 @@ Example: **register_new_category** function:
         }
 
         add_filter( 'block_categories_all' , 'register_new_category');
-
 ```
 
 ## Usage
 
-Clone this repository `git clone https://github.com/sarahcssiqueira/xywz-blocks` or download the [latest release](https://github.com/sarahcssiqueira/xywz-blocks/releases).
+Clone this repository `git clone https://github.com/sarahcssiqueira/wxyz-blocks` or download the [latest release](https://github.com/sarahcssiqueira/wxyz-blocks/releases).
 
 Run `npm install` && `npm run build`
+
+Run `composer install`
 
 ## License
 

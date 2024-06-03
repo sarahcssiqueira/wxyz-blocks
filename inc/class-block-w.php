@@ -19,7 +19,6 @@ class BlockW {
 	public function __construct() {
 		add_action( 'init', [ $this, 'block_w_register' ] );
 		add_action( 'enqueue_block_editor_assets', [ $this, 'block_w_enqueues' ] );
-		add_filter( 'block_categories_all', [ $this, 'register_new_category' ], 10, 2 );
 	}
 
 	/**
@@ -44,17 +43,5 @@ class BlockW {
 			plugin_dir_url( __FILE__ ) . '..style/style.css',
 			[],
 		);
-	}
-
-	/**
-	 * Register custom category
-	 */
-	public function register_new_category( $categories ) {
-		$categories[] = [
-			'slug'  => 'xywz-blocks',
-			'title' => 'XYW...Z Blocks',
-		];
-
-		return $categories;
 	}
 }
