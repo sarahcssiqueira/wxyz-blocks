@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "WXYZBlocks\\Inc\\": "./inc"
+      "WXYZBlocks\\Inc\\": "inc/"
     }
   },
   "scripts": {
