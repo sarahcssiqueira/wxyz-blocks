@@ -20,7 +20,6 @@ class Init {
 		add_filter( 'block_categories_all', [ $this, 'register_new_category' ] );
 	}
 
-
 	/*
 	 Register custom category
 	*/

@@ -19,11 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-require_once __DIR__ . '/inc/class-block-x.php';
-require_once __DIR__ . '/inc/class-block-y.php';
-require_once __DIR__ . '/inc/class-block-w.php';
-require_once __DIR__ . '/inc/class-block-z.php';
-require_once __DIR__ . '/inc/class-init.php';
+require __DIR__ . '/vendor/autoload.php';
 
 use WXYZBlocks\Inc\BlockX;
 use WXYZBlocks\Inc\BlockY;
