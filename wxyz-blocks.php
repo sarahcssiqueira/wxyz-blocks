@@ -4,7 +4,7 @@
  * Plugin URI:        https://sarahjobs.com/wordpress/plugins/wxyz-blocks
  * Description:       Structure to work with multiple blocks in a single plugin.
  * Version:           1.0.0-beta
- * Requires at least: 5.6
+ * Requires at least: 5.8
  * Requires PHP:      7.4
  * Author:            Sarah Siqueira
  * Author URI:        https://sarahjobs.com/about
@@ -17,19 +17,19 @@
  * @package wxyzblocks
  */
 
+/**
+ * Exit is accessed directly.
+ */
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * Composer Autoload
+ */
 require __DIR__ . '/vendor/autoload.php';
 
-use WXYZBlocks\Inc\BlockX;
-use WXYZBlocks\Inc\BlockY;
-use WXYZBlocks\Inc\BlockW;
-use WXYZBlocks\Inc\BlockZ;
+/**
+ * Bootstraps the plugin
+ */
 use WXYZBlocks\Inc\Init;
-
-new BlockX();
-new BlockY();
-new BlockW();
-new BlockZ();
-new Init();
-
+$init = new Init();
+$init->register_classes_list();
