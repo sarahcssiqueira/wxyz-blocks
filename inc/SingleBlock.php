@@ -1,6 +1,6 @@
 <?php
 /**
- * Block Z
+ * Single Blocks class
  *
  * @package wxyzblocks
  */
@@ -8,7 +8,7 @@
 namespace WXYZBlocks\Inc;
 
 /**
- * Block Y
+ * Single Blocks class
  */
 class SingleBlock {
 
