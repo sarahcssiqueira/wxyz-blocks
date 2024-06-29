@@ -22,11 +22,15 @@
   "scripts": {
     "cstd": "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
     "cs": "./vendor/bin/phpcs --standard=.phpcs.xml --report=summary .",
-    "cbf": "./vendor/bin/phpcbf --standard=.phpcs.xml ."
+    "cbf": "./vendor/bin/phpcbf --standard=.phpcs.xml .",
+    "test": "vendor/bin/phpunit"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7",
     "wp-coding-standards/wpcs": "^2.3",
-    "phpcompatibility/php-compatibility": "^9.3"
+    "phpcompatibility/php-compatibility": "^9.3",
+    "phpunit/phpunit": "^9.5",
+    "phpunit/php-code-coverage": "^9.2",
+    "yoast/phpunit-polyfills" : "*"
   }
 }
