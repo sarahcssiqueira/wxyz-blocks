@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "@wordpress/i18n": "^4.38.0",
-    "@wordpress/scripts": "^26.19.0"
+    "@wordpress/scripts": "^30.3.0"
   }
 }
