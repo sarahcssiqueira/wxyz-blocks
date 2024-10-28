@@ -8,9 +8,9 @@
 namespace WXYZBlocks\Inc;
 
 /**
- * Single Blocks class
+ * Single Blocks class implementing BlockManagerInterface
  */
-class SingleBlock {
+class SingleBlock implements BlockManagerInterface {
 
 	/**
 	 * Custom constructor for handle WordPress Hooks
@@ -28,7 +28,7 @@ class SingleBlock {
 	 *
 	 * @return array Full list of block names and paths
 	 */
-	public function blocks_list() {
+	public function blocks_list(): array {
 		return [
 			'block-w',
 			'block-x',
@@ -43,9 +43,9 @@ class SingleBlock {
 	 * Iterates over the list of block names returned by the blocks_list method
 	 * and registers each block using the custom_block_register method.
 	 */
-	public function blocks_register() {
-		foreach ( self::blocks_list() as $block ) {
-			self::custom_block_register( $block );
+	public function blocks_register(): void {
+		foreach ( $this->blocks_list() as $block ) {
+			$this->custom_block_register( $block );
 		}
 	}
 
@@ -55,9 +55,9 @@ class SingleBlock {
 	 * Iterates over the list of block names returned by the blocks_list method
 	 * and enqueues the scripts and styles for each block using the custom_block_enqueues method.
 	 */
-	public function blocks_enqueues() {
-		foreach ( self::blocks_list() as $block ) {
-			self::custom_block_enqueues( $block );
+	public function blocks_enqueues(): void {
+		foreach ( $this->blocks_list() as $block ) {
+			$this->custom_block_enqueues( $block );
 		}
 	}
 
@@ -66,7 +66,7 @@ class SingleBlock {
 	 *
 	 * @param  block $block block from the blocks_list method.
 	 */
-	public function custom_block_register( $block ) {
+	public function custom_block_register(string $block): void {
 		register_block_type( __DIR__ . "/../blocks/$block" );
 	}
 
@@ -75,7 +75,7 @@ class SingleBlock {
 	 *
 	 * @param  block $block block from the blocks_list method.
 	 */
-	public function custom_block_enqueues( $block ) {
+	public function custom_block_enqueues(string $block): void {
 		wp_enqueue_script(
 			'$block',
 			plugin_dir_url( __FILE__ ) . "../blocks/$block/build/index.js",

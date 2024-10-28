@@ -16,8 +16,7 @@ class Blocks {
 	 * Custom constructor for handle WordPress Hooks
 	 */
 	public static function initialize() {
-		$self = new self();
-		add_filter( 'block_categories_all', [ $self, 'register_new_category' ] );
+		add_filter( 'block_categories_all', [ $this, 'register_new_category' ] );
 	}
 
 	/**
