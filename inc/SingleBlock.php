@@ -15,13 +15,12 @@ class SingleBlock {
 	/**
 	 * Custom constructor for handle WordPress Hooks
 	 */
-	public static function initialize() {
-		$self = new self();
-		add_action( 'init', [ $self, 'blocks_list' ] );
-		add_action( 'init', [ $self, 'blocks_register' ] );
-		add_action( 'init', [ $self, 'blocks_enqueues' ] );
-		add_action( 'init', [ $self, 'custom_block_register' ] );
-		add_action( 'enqueue_block_editor_assets', [ $self, 'custom_block_enqueues' ] );
+	public function initialize() {
+		add_action( 'init', [ $this, 'blocks_list' ] );
+		add_action( 'init', [ $this, 'blocks_register' ] );
+		add_action( 'init', [ $this, 'blocks_enqueues' ] );
+		add_action( 'init', [ $this, 'custom_block_register' ] );
+		add_action( 'enqueue_block_editor_assets', [ $this, 'custom_block_enqueues' ] );
 	}
 
 	/**
@@ -29,7 +28,7 @@ class SingleBlock {
 	 *
 	 * @return array Full list of block names and paths
 	 */
-	public static function blocks_list() {
+	public function blocks_list() {
 		return [
 			'block-w',
 			'block-x',
@@ -79,14 +78,15 @@ class SingleBlock {
 	public function custom_block_enqueues( $block ) {
 		wp_enqueue_script(
 			'$block',
-			plugin_dir_url( __FILE__ ) . '../blocks/' . $block . '/build/index.js',
+			plugin_dir_url( __FILE__ ) . "../blocks/$block/build/index.js",
 			[ 'wp-blocks', 'wp-i18n', 'wp-editor' ]
 		);
 
 		wp_enqueue_style(
 			'$block',
-			plugin_dir_url( __FILE__ ) . '..style/style.css',
+            plugin_dir_url( __FILE__ ) . "../blocks/$block/style.css",
 			[],
+            null
 		);
 	}
 }
