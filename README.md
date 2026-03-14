@@ -3,6 +3,7 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![Release Version](https://img.shields.io/github/release/sarahcssiqueira/xywz-blocks.svg)](https://github.com/sarahcssiqueira/wxyz-blocks/releases/latest)
+[![Support Level](https://img.shields.io/badge/support-may_take_time-yellow.svg)](#support-level)
 
 A **developer-focused WordPress plugin** that bundles multiple Gutenberg blocks under a single plugin, plus a lightweight “framework” structure (service loader, block manager pattern, tests) to help maintain many blocks in one codebase.
 
