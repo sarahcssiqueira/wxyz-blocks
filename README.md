@@ -73,6 +73,10 @@ Run `npm install` && `npm run build`
 
 Run `composer install`
 
+## Tests
+
+[TO DO]
+
 ## License
 
 This project is licensed under the license [GPLv2 or later](https://choosealicense.com/licenses/gpl-2.0/#).

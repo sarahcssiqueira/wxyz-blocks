@@ -23,9 +23,21 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Define essential constants
+ */
+define( 'WXYZ_BLOCKS_VERSION', '0.1.0' );
+
+define( 'WXYZ_BLOCKS_PHP_MINIMUM', '7.4.0' );
+
+define( 'WXYZ_BLOCKS_WP_MINIMUM', '6.4.0' );
+
+
+/**
  * Composer Autoload
  */
-require __DIR__ . '/vendor/autoload.php';
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+	require_once __DIR__ . '/vendor/autoload.php';
+}
 
 /**
  * Bootstraps the plugin
